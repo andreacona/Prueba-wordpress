@@ -1,0 +1,263 @@
+/*
+0. General Styling
+1. Upgrade Now Box
+2. Getting Started
+3. Support
+4. Free VS Pro
+5. Responsive
+6. Misc
+*/
+
+/* ----------------------------------------------------------------------------------------------------------
+	0. GENERAL
+---------------------------------------------------------------------------------------------------------- */
+
+.about-wrap h1 small.about-version {
+	font-size: 28px;
+    text-transform: lowercase;
+}
+
+/* Hide defauly dismiss button */
+.bts-toolbox-about a.notice-dismiss {
+	padding: 10px !important;
+	text-decoration: none !important;
+}
+.bts-toolbox-about button.notice-dismiss {
+	display: none !important;
+}
+
+/* Position about text away from upgrade box */
+.appearance_page_bts-welcome .about-wrap h1,
+.appearance_page_bts-welcome .about-wrap .about-text {
+	margin-right: 340px;
+}
+.appearance_page_bts-welcome .about-wrap .about-text {
+	margin-bottom: 30px;
+}
+.appearance_page_bts-welcome .bts-toolbox-about {
+	display: none !important;
+}
+
+/* proper positioning of the icons */
+.epsilon-wrap i.dashicons {
+	margin-right: 15px;
+	position: relative;
+	top: 6px;
+}
+
+/* Position feature sections correctly */
+.about-wrap .feature-section {
+	padding: 30px 0 0;
+}
+
+.about-wrap .feature-section .col {
+	margin-top: 0;
+	margin-bottom: 5%;
+}
+.about-wrap .feature-section .col:nth-child(3n + 1) {
+	clear:both;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	1. UPGRADE NOW BOX
+---------------------------------------------------------------------------------------------------------- */
+
+/* Promotional table */
+#promotion-table {
+	background: #fff;
+	margin-bottom: 40px;
+	border: 1px solid #DDD;
+	padding: 17px 10px 20px;
+	width: 300px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#promotion-header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+#promotion-header,
+#promotion-coupon {
+}
+
+/* Upgrade button and coupon section */
+#bts-promotion-field-header {
+    position: relative;
+    margin-bottom: 40px;
+}
+#bts-promotion-field-header .main-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 20px;
+	line-height: 1;
+	text-align: center;
+}
+
+/* Upgrade Now button */
+#promotion-header .button.button-primary {
+	line-height: 44px;
+	text-transform: uppercase;
+	width: 190px;
+	height: 44px;
+	padding: 0;
+}
+
+/* Coupon styling */
+#promotion-coupon a {
+	background: #F3F3F3;
+	font-size: 22px;
+	margin-bottom: 20px;
+	line-height: 1;
+	color: #23282d;
+	text-decoration: none;
+	width: 220px;
+	padding: 10px 10px 15px;
+	text-align: center;
+	border: 2px dashed #23282d;
+	margin: 0 auto 0;
+	display: block;
+}
+#promotion-coupon a:hover {
+    background-color: #699844;
+    color: #fff;
+    border: 2px dashed #699844;
+}
+#promotion-coupon span {
+	font-size: 12px;
+	display: block;
+	margin-top: 10px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	2. GETTING STARTED
+---------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	3. SUPPORT
+---------------------------------------------------------------------------------------------------------- */
+
+#bts-support-content > .col:nth-child(3) {
+background: #fff;
+    border: 1px solid #ddd;
+    padding: 0 20px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ #bts-support-content > .col:nth-child(3) > h3 {
+	margin-top: 16px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	4. FREE VS PRO
+---------------------------------------------------------------------------------------------------------- */
+
+#free_pro .free-pro-table {
+	border-spacing: 0;
+	width: 100%;
+}
+
+#free_pro .free-pro-table th {
+	padding-bottom: 20px;
+}
+
+#free_pro .free-pro-table td {
+	border-top: 1px solid #ccc;
+	padding: 20px 0 25px;
+}
+
+#free_pro .free-pro-table h3{
+	margin: 0;
+}
+
+#free_pro .free-pro-table td p {
+	margin: 0;
+}
+
+#free_pro .free-pro-table .only-lite,
+#free_pro .free-pro-table .only-pro {
+	font-weight: 600;
+	text-align: center;
+	width: 15%;
+}
+
+#free_pro .free-pro-table .only-lite .dashicons-before:before {
+	color: #00A878;
+}
+
+#free_pro .free-pro-table .only-pro .dashicons-before:before {
+	color: #ff3439;
+}
+
+#free_pro .free-pro-table .only-lite .dashicons-before:before,
+#free_pro .free-pro-table .only-pro .dashicons-before:before {
+	font-size: 35px;
+	height: 35px;
+	width: 35px;
+}
+
+#free_pro .bts-free-pro-button {
+	text-align: right;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	5. RESPONSIVE
+---------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+	.appearance_page_bts-welcome .about-wrap h1,
+	.appearance_page_bts-welcome .about-wrap .about-text {
+		margin-right: 0;
+	}	
+	#bts-promotion-field-header {
+		position: static;
+	}
+	#promotion-table {
+		margin: 0 auto;
+	}
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	5. MISC
+---------------------------------------------------------------------------------------------------------- */
+
+.one_half     {width: 48.7%; }
+.one_third    {width: 31.6%; }
+.two_third    {width: 65.8%; }
+.one_fourth   {width: 23.05%; }
+.three_fourth {width: 74.35%; }
+.one_fifth    {width: 17.92%; }
+.two_fifth    {width: 38.44%; }
+.three_fifth  {width: 58.96%; }
+.four_fifth   {width: 79.48%; }
+.one_sixth    {width: 14.5%; }
+.five_sixth   {width: 82.9%; }
+.last         {clear: right; margin-right: 0px !important; }
+
+.one_half,
+.one_third,
+.two_third,
+.one_fourth,
+.three_fourth,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth,
+.one_sixth,
+.five_sixth {
+	margin-right: 2.6%;
+	margin-bottom: 20px;
+	position: relative;
+	float: left;
+}
